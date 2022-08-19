@@ -8,16 +8,24 @@
 }
 @font-face {
     font-family: 'PassionOne';
-    src: url(fontes/PassionOne-Black.ttf) format('opentype');
+    src: url(fontes/PassionOne-Regular.ttf) format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'PassionOne', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 html,body{
     min-height: 100vh;
+    font-family: var(--fonte1);
+
 }
        
 header{
@@ -31,11 +39,13 @@ header{
 }
 header h1{
     padding-top: 50px;
+    font-family: var(--fonte2);
     font-variant: small-caps;
+    font-size: 10vw;
 }
 header p{
     padding-bottom: 50px;
-    padding-top: 30px;
+    
 }
 header a{
     color: white;
@@ -49,11 +59,13 @@ a:hover{
 
 }
 section{
-    font-family: Sriracha, Helvetica, sans-serif;
+    font-family: var(--fonte3);
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;  
+    line-height: 1.5em;
+    padding-left: 30px; 
+    font-size: 3.5vw; 
+   
 }
 section.normal{
     background-color: white;
@@ -66,10 +78,11 @@ section.normal{
     background-repeat: no-repeat;
     color: white;
     
+    
            
 }
 .imagem>p{
-    width: 300px;
+    max-width: 600px;
     background-color: rgba(0, 0, 0, 0.356);
     padding: 50px;
 }
@@ -79,7 +92,7 @@ section.normal{
     background-image: url(imagens/background002.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 98vh;
+    height: 100vh;
     color: white;
 }
 
