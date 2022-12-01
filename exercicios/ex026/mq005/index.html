@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">INSTITUCIONAL</a></li>
+                <li><a href="#">NOVIDADES</a></li>
+                <li><a href="#">PROJETOS</a></li></a></li>
+                <li><a href="#">CONTATOS</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid eos quidem beatae iste eveniet vero velit nam, 
+                consectetur quas architecto laboriosam corporis ab culpa 
+                veritatis! Nam quos tempora provident expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid eos quidem beatae iste eveniet vero velit nam, 
+                consectetur quas architecto laboriosam corporis ab culpa 
+                veritatis! Nam quos tempora provident expedita.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid eos quidem beatae iste eveniet vero velit nam, 
+                consectetur quas architecto laboriosam corporis ab culpa 
+                veritatis! Nam quos tempora provident expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid eos quidem beatae iste eveniet vero velit nam, 
+                consectetur quas architecto laboriosam corporis ab culpa 
+                veritatis! Nam quos tempora provident expedita.</p>
+           
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid eos quidem beatae iste eveniet vero velit nam, 
+                consectetur quas architecto laboriosam corporis ab culpa 
+                veritatis! Nam quos tempora provident expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aliquid eos quidem beatae iste eveniet vero velit nam, 
+                consectetur quas architecto laboriosam corporis ab culpa 
+                veritatis! Nam quos tempora provident expedita.</p>
+
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display=="block"){
+                itens.style.display="none"
+            }else{
+                itens.style.display="block"
+            }
+        }
+    </script>
+    
+</body>
+</html>
